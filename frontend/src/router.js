@@ -4,14 +4,18 @@ import Ingest from './pages/Ingest.vue'
 import Quarantine from './pages/Quarantine.vue'
 import Sidecar from './pages/Sidecar.vue'
 import Proofs from './pages/Proofs.vue'
+import ExceptionAxis from './pages/ExceptionAxis.vue'
+import ExceptionSet from './pages/ExceptionSet.vue'
 
 export default createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: Board },
     { path: '/ingest', component: Ingest },
-    { path: '/quarantine', component: Quarantine },
+    { path: '/exception-axis', component: ExceptionAxis },
+    { path: '/exception-set', component: ExceptionSet },
     { path: '/sidecar', component: Sidecar },
+    { path: '/quarantine', component: Quarantine },
     { path: '/proofs', component: Proofs },
   ],
 })

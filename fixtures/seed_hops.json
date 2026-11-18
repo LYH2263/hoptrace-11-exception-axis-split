@@ -39,12 +39,30 @@
       "seq": 3
     },
     {
+      "id": "H-EX1",
+      "waybill_id": "WB-1001",
+      "event_ts": "2026-11-17T19:30:00Z",
+      "location_code": "HZ-HUB",
+      "event_code": "DAMAGED",
+      "seq": 4,
+      "_note": "异常码对照点：时间戳晚于全部正常点，旧逻辑会抢末位，分轴后必须落异常轴且不改投影"
+    },
+    {
       "id": "H-4",
       "waybill_id": "WB-1002",
       "event_ts": "2026-11-17T09:15:00Z",
       "location_code": "SH-LOCAL",
       "event_code": "PICKED",
       "seq": 1
+    },
+    {
+      "id": "H-EX2",
+      "waybill_id": "WB-1002",
+      "event_ts": "2026-11-17T11:00:00Z",
+      "location_code": "SH-LOCAL",
+      "event_code": "EXCEPTION",
+      "seq": 2,
+      "_note": "异常码对照点：与正常码 PICKED 同运单对照"
     }
   ]
 }

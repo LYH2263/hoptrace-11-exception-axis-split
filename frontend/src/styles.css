@@ -344,3 +344,112 @@ a { color: inherit; text-decoration: none; }
   .brand-strip { grid-template-columns: 1fr; }
   .chip-nav { justify-content: flex-start; }
 }
+
+/* exception_axis_split：双轴、异常集合配置、分轴证明 */
+.axis-title {
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  margin: 18px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.axis-title-primary { color: var(--mint); }
+.axis-title-exc { color: var(--danger); display: flex; align-items: center; gap: 10px; }
+.exc-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  background: #f3dcd7;
+  color: var(--danger);
+  border-radius: 999px;
+  padding: 2px 8px;
+  letter-spacing: 0;
+}
+
+.v-axis-exc {
+  border-left-color: #d8a39a;
+}
+.hop-node-exc::before {
+  background: var(--danger);
+  box-shadow: 0 0 0 4px #f3dcd7;
+}
+.hop-node-exc .loc { color: var(--danger); }
+
+.stat-danger b { color: var(--danger); }
+.dot-exc { background: var(--danger); }
+.dot-line-exc { background: #7a4a42; }
+.rail-empty { font-size: 11px; margin: 0 8px; }
+.label-exc { margin-left: 22px; color: #e0a89e; }
+
+.code-chip {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  background: var(--amber-soft);
+  color: #6b4a06;
+  border: 1px solid #e0c079;
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin: 2px 4px 2px 0;
+}
+.chip-row { margin-bottom: 14px; }
+
+.exc-badge {
+  display: inline-block;
+  min-width: 22px;
+  text-align: center;
+  background: #f3dcd7;
+  color: var(--danger);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-weight: 600;
+}
+
+.proof-ok { color: var(--mint); font-weight: 600; }
+.proof-bad { color: var(--danger); font-weight: 600; }
+
+.section-title {
+  margin: 26px 0 12px;
+  font-family: var(--display);
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-block {
+  border: 1px solid var(--line);
+  background: #f0f6f2;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.field-label {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 10px 0 6px;
+}
+.code-input {
+  width: 100%;
+  font-family: var(--mono);
+  font-size: 13px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  resize: vertical;
+}
+.note-input { margin-bottom: 14px; }
+.btn-row { margin-top: 12px; }
+.cur-tag {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 10px;
+  font-family: var(--sans);
+  background: var(--mint);
+  color: #fff;
+  border-radius: 3px;
+  padding: 1px 6px;
+}
+.report-kv { margin-top: 4px; max-width: 520px; }

@@ -20,4 +20,17 @@ export const api = {
   ingest: () => req('/api/ingest/run', { method: 'POST' }),
   proofs: (waybillId) =>
     req(waybillId ? `/api/status-proofs?waybill_id=${encodeURIComponent(waybillId)}` : '/api/status-proofs'),
+
+  // 异常轴分流（exception_axis_split）
+  exceptionSet: () => req('/api/exception-set'),
+  saveExceptionSet: (codes, note) =>
+    req('/api/exception-set', {
+      method: 'PUT',
+      body: JSON.stringify({ codes, note }),
+    }),
+  exceptionHops: (waybillId) =>
+    req(waybillId ? `/api/exception-hops?waybill_id=${encodeURIComponent(waybillId)}` : '/api/exception-hops'),
+  axisProofs: (waybillId) =>
+    req(waybillId ? `/api/axis-proofs?waybill_id=${encodeURIComponent(waybillId)}` : '/api/axis-proofs'),
+  waybillAxisProof: (id) => req(`/api/waybills/${encodeURIComponent(id)}/axis-proof`),
 }

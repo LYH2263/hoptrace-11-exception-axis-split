@@ -9,7 +9,7 @@
       "event_ts": "2026-11-17T19:20:00Z",
       "location_code": "HZ-STATION",
       "event_code": "OUT_FOR_DELIVERY",
-      "seq": 4
+      "seq": 5
     },
     {
       "id": "H-6",
@@ -18,7 +18,27 @@
       "event_ts": "2026-11-17T10:00:00Z",
       "location_code": "SH-LOCAL",
       "event_code": "OUT_FOR_DELIVERY",
-      "seq": 2
+      "seq": 3
+    },
+    {
+      "id": "H-7",
+      "waybill_id": "WB-1002",
+      "waybill_title": "同城急送样件",
+      "event_ts": "2026-11-17T12:30:00Z",
+      "location_code": "SH-LOCAL",
+      "event_code": "EXCEPTION",
+      "seq": 4,
+      "_note": "异常码：全单最新时间戳，验证异常点不得抢正式投影末位"
+    },
+    {
+      "id": "H-8",
+      "waybill_id": "WB-1001",
+      "waybill_title": "华东干线样件",
+      "event_ts": "2026-11-17T19:45:00Z",
+      "location_code": "HZ-STATION",
+      "event_code": "LOST",
+      "seq": 6,
+      "_note": "异常码 LOST 对照：与正常码 OUT_FOR_DELIVERY 同批装载分流"
     }
   ]
 }
